@@ -1,5 +1,10 @@
 {
   "version": 2,
+    "name": "indie.camp",
+  "alias": ["indie.camp"],
+    "github": {
+    "enabled": true
+  },
   "builds": [
     { "src": "index.js", "use": "@now/node" },
     { "src": "index.html", "use": "@now/static" },
