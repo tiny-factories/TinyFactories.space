@@ -1,17 +1,9 @@
 {
   "version": 2,
-	"name": "IndieCamp",
-  "alias": ["indie.camp"],
-  "regions": ["sfo1", "bru1"],
-  "github": {
-    "enabled": true,
-    "autoAlias": true
-  },
-	"builds": [
-		{ "src": "*.html", "use": "@now/html-minifier" },
-		{ "src": "main.css", "use": "@now/html-minifier" }
-		
+  "builds": [
+    { "src": "index.js", "use": "@now/node" },
+    { "src": "index.html", "use": "@now/static" },
+    { "src": "style.css", "use": "@now/static" }
+
   ]
-
-
 }
