@@ -1,0 +1,200 @@
+/* CSS files add styling rules to your content */
+
+body{
+ font-family: helvetica;
+ 
+}
+
+footer{
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+  a:link {
+    color: black;
+  }
+
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: black;
+  }
+
+  /* selected link */
+  a:active {
+    color: black;
+  }
+
+.nav-style{
+
+}
+
+.text-style{
+  font-family: helvetica;
+  font-weight: BOLD;
+/*   font-size:24px;
+        background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 3% 7%;  */
+}
+
+.text-style-faq{
+  font-family: helvetica;
+  font-weight: BOLD;
+  font-size:24px;
+}
+
+.sec-intro{
+    padding:30vh 10vw 5vh 10vw;
+    margin: 0 0 0 0;
+}
+.sec-faq{
+    padding:10vh 10vw 5vh 10vw;
+    margin: 0 0 0 0;
+}
+
+.sec-middle{
+  padding:20vh 10vw 40vh 10vw;
+  margin: 0 0 0 0;
+  background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+}
+
+.sec-newsletter{
+  padding:10vh 10vw 10vh 10vw;
+  margin: 0 0 0 0;
+  text-align:center;
+  font-weight:BOLD;
+}
+
+
+footer{
+  padding:0vh 10vw 0vh 10vw;
+}
+
+/* Breakpoints */
+
+@media (min-width: 576px) { 
+  .text-style{
+    font-family: helvetica;
+    font-weight: BOLD;
+    font-size:24px;
+/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 5% 2%;  */
+  }
+  
+  .sec-intro{
+    padding:23vh 10vw 5vh 10vw;
+}
+
+  .sec-middle{
+    padding:20vh 10vw 40vh 10vw;
+    margin: 0 0 0 0;
+    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
+    background-repeat: no-repeat;
+    background-position: 400px 0%;
+  }
+}
+
+
+@media (min-width: 768px) { 
+  .text-style{
+    font-family: helvetica;
+    font-weight: BOLD;
+    font-size:24px;
+/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 3% 7%;  */
+
+  }
+
+
+  .sec-middle{
+    padding:20vh 10vw 40vh 10vw;
+    margin: 0 0 0 0;
+    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+  }
+}
+
+
+@media (min-width: 992px) { 
+    .text-style{
+    font-family: helvetica;
+    font-weight: BOLD;
+    font-size:24px;
+/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
+    background-repeat: no-repeat;
+    background-position: 3% 7%; 
+ */
+  }
+
+
+  .sec-middle{
+    padding:20vh 10vw 40vh 10vw;
+    margin: 0 0 0 0;
+    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+    .text-style{
+    font-family: helvetica;
+    font-weight: BOLD;
+    font-size:24px;
+/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 5% 4vh;  */
+
+  }
+  
+  .sec-intro{
+    padding:25vh 10vw 5vh 10vw;
+    margin: 0 0 0 0;
+}
+
+
+  .sec-middle{
+    padding:20vh 10vw 40vh 10vw;
+    margin: 0 0 0 0;
+    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+  }
+
+}
