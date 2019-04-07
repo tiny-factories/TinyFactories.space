@@ -57,8 +57,8 @@ li a {
 .text-style{
   font-family: helvetica;
   font-weight: BOLD;
-/*   font-size:24px;
-        background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
+  font-size:24px;
+  /* background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 3% 7%;  */
@@ -80,11 +80,11 @@ li a {
 }
 
 .sec-middle{
-  padding:20vh 10vw 40vh 10vw;
-  margin: 0 0 0 0;
+   padding:20vh 10vw 40vh 10vw;
+  /* margin: 0 0 0 0;
   background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
   background-repeat: no-repeat;
-  background-position: 75% 50%;
+  background-position: 75% 50%; */
 }
 
 .sec-newsletter{
@@ -148,7 +148,6 @@ footer{
   }
 }
 
-
 @media (min-width: 992px) { 
     .text-style{
     font-family: helvetica;
@@ -160,7 +159,6 @@ footer{
  */
   }
 
-
   .sec-middle{
     padding:20vh 10vw 40vh 10vw;
     margin: 0 0 0 0;
@@ -169,7 +167,6 @@ footer{
     background-position: 75% 50%;
   }
 }
-
 
 @media (min-width: 1200px) { 
     .text-style{
@@ -187,7 +184,6 @@ footer{
     padding:25vh 10vw 5vh 10vw;
     margin: 0 0 0 0;
 }
-
 
   .sec-middle{
     padding:20vh 10vw 40vh 10vw;
