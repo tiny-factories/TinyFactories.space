@@ -1,12 +1,13 @@
 /* CSS files add styling rules to your content */
 
-body{
- font-family: helvetica;
- 
+body {
+background-color:  #f5f9fa  ;
+  
+  /* Gray blue #f5f9fa */
 }
 
-footer{
-  
+footer {
+  padding: 0 0 0 0;
 }
 
 ul {
@@ -17,7 +18,6 @@ ul {
 
 li {
   float: left;
-
 }
 
 li:last-child {
@@ -31,166 +31,752 @@ li a {
   text-decoration: none;
 }
 
-  a:link {
-    color: black;
-  }
+a:link {
+  color: black;
+}
 
-  /* visited link */
-  a:visited {
-    color: black;
-  }
+/* visited link */
+a:visited {
+  color: black;
+}
 
-  /* mouse over link */
-  a:hover {
-    color: black;
-  }
+/* mouse over link */
+a:hover {
+  color: black;
+}
 
-  /* selected link */
-  a:active {
-    color: black;
-  }
+/* selected link */
+a:active {
+  color: black;
+}
 
-.nav-style{
+.nav-style {
+}
+
+.text-style {
+  font-family: 'Work Sans', sans-serif;
+/*  font-family: 'Poppins', sans-serif; */
+ /* font-family: helvetica; */
+  font-size: 24px;
+}
+
+.text-style-faq {
+  /*font-family: helvetica;*/
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+}
+
+.sec-intro {
+  padding: 0vh 10vw 0vh 10vw;
+  margin: 0 0 0 0;
+  font-weight: 600;
+  font-size: 64px;
+  color: #000;
+  text-align: left;
 
 }
 
-.text-style{
-  font-family: helvetica;
-  font-weight: BOLD;
-  font-size:24px;
-  /* background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 3% 7%;  */
+.sec-main {
+  padding: 1vh 10vw 0vh 10vw;
+  margin: 0 0 0 0;
 }
 
-.text-style-faq{
-  font-family: helvetica;
-  font-weight: BOLD;
-  font-size:24px;
+.sec-main h2 {
+  font-weight: Normal;
 }
 
-.sec-intro{
-    padding:30vh 10vw 5vh 10vw;
-    margin: 0 0 0 0;
-}
-.sec-faq{
-    padding:10vh 10vw 5vh 10vw;
-    margin: 0 0 0 0;
+.sec-main p {
+  font-size: 24px;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 34px;
 }
 
-.sec-middle{
-   padding:20vh 10vw 40vh 10vw;
+
+
+.sec-faq {
+  padding: 10vh 10vw 5vh 10vw;
+  margin: 0 0 0 0;
+}
+
+.sec-faq h2 {
+  font-weight: Normal;
+}
+
+.sec-faq p {
+  font-size: 24px;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 34px;
+}
+
+.sec-faq a {
+  font-size: 24px;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 34px;
+}
+
+
+
+
+.sec-middle {
+  padding: 20vh 10vw 0vh 10vw;
   /* margin: 0 0 0 0;
   background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
   background-repeat: no-repeat;
   background-position: 75% 50%; */
 }
 
-.sec-newsletter{
-  padding:10vh 10vw 10vh 10vw;
+.sec-middle h2 {
+  font-weight: Normal;
+}
+
+.sec-middle p {
+  font-size: 24px;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 34px;
+}
+
+
+.sec-newsletter {
+  padding: 0vh 10vw 10vh 10vw;
   margin: 0 0 0 0;
-  text-align:center;
-  font-weight:BOLD;
+  text-align: center;
+  font-weight: Normal;
+}
+
+.sec-newsletter h2 {
+  font-weight: Normal;
+}
+
+.sec-newsletter h3 {
+  font-weight: Normal;
+  text-align: left;
+  font-size: 25px;
+}
+
+.sec-newsletter p {
+  font-size: 24px;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 34px;
+}
+
+footer {
+  padding: 0vh 10vw 0vh 10vw;
 }
 
 
-footer{
-  padding:0vh 10vw 0vh 10vw;
-}
-
+/***************/
 /* Breakpoints */
+/***************/
 
-@media (min-width: 576px) { 
-  .text-style{
-    font-family: helvetica;
-    font-weight: BOLD;
-    font-size:24px;
-/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+  .sec-intro {
+  padding: 5vh 0vw 0vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+  .sec-main {
+    padding: 0vh 0vw 0vh 0vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-faq {
+    padding: 0vh 0vw 0vh 0vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-middle {
+    padding: 0vh 0vw 0vh 0vw;
+
+  }
+
+
+  .sec-newsletter {
+    padding: 10vh 10vw 10vh 10vw;
+    margin: 0 0 0 0;
+  }
+
+
+  footer {
+    padding: 0vh 10vw 0vh 10vw;
+  }
+
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  .sec-intro {
+  padding: 5vh 0vw 0vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+  .sec-main {
+    padding: 0vh 0vw 0vh 0vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-faq {
+    padding: 0vh 0vw 0vh 0vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-middle {
+    padding: 0vh 0vw 0vh 0vw;
+
+  }
+
+
+  .sec-newsletter {
+    padding: 0vh 10vw 10vh 10vw;
+    margin: 0 0 0 0;
+  }
+
+
+  footer {
+    padding: 0vh 10vw 0vh 10vw;
+  }
+}
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    
+  .sec-intro {
+padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+  .sec-main {
+   padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0; 
+  }
+
+  .sec-faq {
+    padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+  .sec-middle {
+  padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+
+  .sec-newsletter {
+  padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+
+  footer {
+    
+  }
+
+}
+
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
+  .sec-intro {
+  padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+  .sec-main {
+   padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0; 
+  }
+
+  .sec-faq {
+   padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0; 
+  }
+
+  .sec-middle {
+  padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+}
+
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
+  .sec-intro {
+
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+}
+
+
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+      .sec-intro {
+
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+}
+
+
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+      .sec-intro {
+
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+}
+
+
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+  .sec-intro {
+
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+}
+
+
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+      .sec-intro {
+
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+}
+
+
+
+/* ----------- Non-Retina Screens Desktops ----------- */
+@media screen and (min-width: 480px) {
+.sec-intro {
+   padding: 10vh 0vw 5vh 10vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-main {
+   padding: 10vh 0vw 5vh 10vw;
+    
+
+  }
+
+  .sec-faq {
+   padding: 10vh 0vw 5vh 10vw;
+
+
+  }
+
+  .sec-middle {
+   padding: 10vh 0vw 5vh 10vw;
+        
+  
+
+  }
+.kanji {
+    padding:0 0 0 0;
+    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 5% 2%;  */
+    background-position: 75% 50%;
+    opacity: 0.05; 
+  }
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+}
+
+@media (min-width: 576px) {
+  .sec-intro {
+   padding: 15vh 5vw 5vh 10vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+t
+}
+
+
+
+@media (min-width: 768px) {
+ .sec-intro {
+   padding: 15vh 5vw 5vh 10vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+ 
+}
+
+
+
+@media (min-width: 992px) {
+  .sec-intro {
+   padding: 15vh 10vw 5vh 10vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+  
+ 
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+
+  
+
+  .sec-middle {
+    padding: 30vh 10vw 40vh 10vw;
+    margin: 0 0 0 0;
+
   }
   
-  .sec-intro{
-    padding:23vh 10vw 5vh 10vw;
-}
-
-  .sec-middle{
-    padding:20vh 10vw 55vh 10vw;
-    margin: 0 0 0 0;
-    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
-    background-repeat: no-repeat;
-    background-position: 400px 0%;
-  }
+ 
 }
 
 
-@media (min-width: 768px) { 
-  .text-style{
-    font-family: helvetica;
-    font-weight: BOLD;
-    font-size:24px;
-/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 3% 7%;  */
 
-  }
-
-
-  .sec-middle{
-    padding:20vh 10vw 40vh 10vw;
-    margin: 0 0 0 0;
-    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-  }
-}
-
-@media (min-width: 992px) { 
-    .text-style{
-    font-family: helvetica;
-    font-weight: BOLD;
-    font-size:24px;
-/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
-    background-repeat: no-repeat;
-    background-position: 3% 7%; 
- */
-  }
-
-  .sec-middle{
-    padding:20vh 10vw 40vh 10vw;
-    margin: 0 0 0 0;
-    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-  }
-}
-
-@media (min-width: 1200px) { 
-    .text-style{
-    font-family: helvetica;
-    font-weight: BOLD;
-    font-size:24px;
-/*     background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F8FB3B649-3671-46E1-94C1-C492FB2B1674.png?1550697219224);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 5% 4vh;  */
-
-  }
+@media (min-width: 1200px) {
   
-  .sec-intro{
-    padding:25vh 10vw 5vh 10vw;
+    .sec-intro {
+   padding: 20vh 10vw 5vh 10vw;
     margin: 0 0 0 0;
-}
-
-  .sec-middle{
-    padding:20vh 10vw 40vh 10vw;
-    margin: 0 0 0 0;
-    background-image: url(https://cdn.glitch.com/e6285e80-2aea-4b1b-804c-fb55c5339665%2F%E5%89%B5.svg?1550274824261);
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
   }
 
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
+
+
+  
+
+
+
+  .sec-middle {
+    padding: 10vh 10vw 10vh 10vw;
+    margin: 0 0 0 0;
+
+  }
+} 
+
+
+
+
+
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    
+   .sec-intro {
+    padding: 20vh 10vw 5vh 10vw;
+    margin: 0 0 0 0;
+  }
+
+  .sec-main {
+    
+  }
+
+  .sec-faq {
+    
+  }
+
+  .sec-middle {
+
+  }
+
+
+  .sec-newsletter {
+    
+  }
+
+
+  footer {
+    
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
