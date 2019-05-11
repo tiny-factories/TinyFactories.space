@@ -55,13 +55,10 @@ a:active {
 
 .text-style {
   font-family: 'Work Sans', sans-serif;
-/*  font-family: 'Poppins', sans-serif; */
- /* font-family: helvetica; */
   font-size: 24px;
 }
 
 .text-style-faq {
-  /*font-family: helvetica;*/
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
 }
@@ -74,6 +71,10 @@ a:active {
   color: #000;
   text-align: left;
 
+}
+
+.sec-intro h1 {
+  font-size: 44px;
 }
 
 .sec-main {
@@ -178,15 +179,38 @@ footer {
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 280px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+  
+    
+  /* Text Size */
+  .sec-intro h1 {
+  font-size: 27px;
+  }  
+    
+  .sec-main h2 {
+  font-size: 23px;
+  }
+    
+  .sec-main p {
+  font-size: 19px;
+  }
+    
+  .sec-newsletter h3 {
+      font-size: 22px;
+    }
+    
+  .sec-newsletter p {
+      font-size: 19px;
+    }
+  
     
   .sec-intro {
-  padding: 5vh 0vw 0vh 5vw;
+  padding: 5vh 0vw 5vh 2vw;
   margin: 0 0 0 0;
   }
-
+    
   .sec-main {
     padding: 0vh 0vw 0vh 0vw;
     margin: 0 0 0 0;
@@ -223,9 +247,28 @@ footer {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    
+ 
+    /* Text Size */
+  .sec-intro h1 {
+  font-size: 30px;
+  }  
+    
+  .sec-main h2 {
+  font-size: 25px;
+  }
+    
+  .sec-main p {
+  font-size: 20px;
+  }
+    
+  .sec-middle h3 {
+  font-size: 22px;
+
+  }
   
   .sec-intro {
-  padding: 5vh 0vw 0vh 5vw;
+  padding: 5vh 0vw 5vh 2vw;
   margin: 0 0 0 0;
   }
 
@@ -240,13 +283,13 @@ footer {
   }
 
   .sec-middle {
-    padding: 0vh 0vw 0vh 0vw;
+    padding: 0vh 0vw 5vh 2vw;
 
   }
 
 
   .sec-newsletter {
-    padding: 0vh 10vw 10vh 10vw;
+    padding: 0vh 0vw 10vh 2vw;
     margin: 0 0 0 0;
   }
 
@@ -265,6 +308,21 @@ footer {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+    
+    
+  /* Text Size */
+  .sec-intro h1 {
+  font-size: 30px;
+  }  
+    
+  .sec-main h2 {
+  font-size: 25px;
+  }
+    
+  .sec-main p {
+  font-size: 21px;
+  }
+    
     
   .sec-intro {
 padding: 5vh 0vw 5vh 5vw;
@@ -764,19 +822,3 @@ t
     
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
