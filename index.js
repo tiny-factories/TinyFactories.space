@@ -1,4 +1,4 @@
-var nameArray = ["writing", "making", "socializing", "communicating", "reading", "playing", "exporing", "learning"]; //One of those will be randomly chosen
+var nameArray = ["writing", "making", "socializing", "communicating", "reading", "playing", "exploring", "learning"]; //One of those will be randomly chosen
 
 var lastIndex = 0; //Used to remember the last word picked
 
