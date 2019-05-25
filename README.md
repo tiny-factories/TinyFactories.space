@@ -1,4 +1,4 @@
-# Indie Camp Site Development Guide (WIP)
+# Tiny Factories Site Development Guide (WIP)
 
 
 Hello, this Glitch Projects acts as the development enviorment for the [tiny factories]() program called [Indie Camp]()https://indie.camp. 

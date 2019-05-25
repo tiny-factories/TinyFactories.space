@@ -120,6 +120,39 @@ a:active {
 
 
 
+.sec-proj {
+  padding: 10vh 10vw 5vh 10vw;
+  margin: 0 0 0 0;
+}
+
+.sec-proj h2 {
+  font-weight: Normal;
+}
+.sec-proj h4{
+  color: #000;
+}
+
+.sec-proj p {
+  font-size: 24px;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 34px;
+  width:25vw;
+}
+
+.sec-proj a {
+  font-size: 24px;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 34px;
+}
+.sec-proj img {
+  width:25vw;
+  padding-bottom:3vh;
+}
+
+
+
 
 .sec-middle {
   padding: 20vh 10vw 0vh 10vw;
@@ -282,6 +315,10 @@ footer {
     margin: 0 0 0 0;
   }
 
+  .sec-proj {
+    padding: 0vh 0vw 0vh 0vw;
+    margin: 0 0 0 0;
+  }
   .sec-middle {
     padding: 0vh 0vw 5vh 2vw;
 
@@ -338,6 +375,13 @@ padding: 5vh 0vw 5vh 5vw;
     padding: 5vh 0vw 5vh 5vw;
   margin: 0 0 0 0;
   }
+    
+.sec-proj {
+    padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0;
+  }
+
+
 
   .sec-middle {
   padding: 5vh 0vw 5vh 5vw;
@@ -381,6 +425,10 @@ padding: 5vh 0vw 5vh 5vw;
    padding: 5vh 0vw 5vh 5vw;
   margin: 0 0 0 0; 
   }
+.sec-proj {
+   padding: 5vh 0vw 5vh 5vw;
+  margin: 0 0 0 0; 
+  }  
 
   .sec-middle {
   padding: 5vh 0vw 5vh 5vw;
@@ -606,6 +654,11 @@ padding: 5vh 0vw 5vh 5vw;
   }
 
   .sec-faq {
+   padding: 10vh 0vw 5vh 10vw;
+
+
+  }
+   .sec-proj {
    padding: 10vh 0vw 5vh 10vw;
 
 
