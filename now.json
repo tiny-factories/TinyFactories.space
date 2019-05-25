@@ -1,7 +1,7 @@
 {
   "version": 2,
     "name": "tinyfactories",
-  "alias": ["indie.camp"],
+  "alias": ["tinyfactories.space"],
     "github": {
     "enabled": true
   },
@@ -9,6 +9,7 @@
     { "src": "index.js", "use": "@now/node" },
     { "src": "index.html", "use": "@now/static" },
     { "src": "faq.html", "use": "@now/static" },
+    { "src": "projects.html", "use": "@now/static" },
     { "src": "style.css", "use": "@now/static" }
 
   ]

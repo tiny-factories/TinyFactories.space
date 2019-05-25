@@ -28,11 +28,12 @@ li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:link {
   color: black;
+  text-decoration: underline;
 }
 
 /* visited link */
@@ -56,11 +57,14 @@ a:active {
 .text-style {
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
+  line-height: 50px
+
 }
 
 .text-style-faq {
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
+
 }
 
 .sec-intro {
@@ -75,6 +79,8 @@ a:active {
 
 .sec-intro h1 {
   font-size: 44px;
+    line-height: 57px;
+
 }
 
 .sec-main {
@@ -83,14 +89,17 @@ a:active {
 }
 
 .sec-main h2 {
+  padding-bottom: 30px;
   font-weight: Normal;
+  line-height: 45px;
+
 }
 
 .sec-main p {
   font-size: 24px;
   color: #9b9b9b;
   text-align: left;
-  line-height: 34px;
+  line-height: 42px;
 }
 
 
@@ -130,6 +139,8 @@ a:active {
 }
 .sec-proj h4{
   color: #000;
+  padding-bottom: 12px;
+
 }
 
 .sec-proj p {
@@ -173,6 +184,9 @@ a:active {
   line-height: 34px;
 }
 
+.symbols {
+  color:#9b9b9b;
+}
 
 .sec-newsletter {
   padding: 0vh 10vw 10vh 10vw;
