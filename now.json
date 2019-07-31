@@ -10,7 +10,9 @@
     { "src": "index.html", "use": "@now/static" },
     { "src": "faq.html", "use": "@now/static" },
     { "src": "projects.html", "use": "@now/static" },
-    { "src": "style.css", "use": "@now/static" }
-
+    { "src": "style.css", "use": "@now/static" },
+    { "src": "opencall_style.css", "use": "@now/static" },
+    { "src": "opencall.html", "use": "@now/static" },
+    { "src": "opencall_scroll.js", "use": "@now/static" }
   ]
 }
