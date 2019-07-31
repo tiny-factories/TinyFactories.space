@@ -14,5 +14,6 @@
     { "src": "opencall_style.css", "use": "@now/static" },
     { "src": "opencall.html", "use": "@now/static" },
     { "src": "opencall_scroll.js", "use": "@now/node" }
+
   ]
 }
