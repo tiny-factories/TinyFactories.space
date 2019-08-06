@@ -13,6 +13,7 @@
     { "src": "style.css", "use": "@now/static" },
     { "src": "opencall_style.css", "use": "@now/static" },
     { "src": "opencall.html", "use": "@now/static" },
-    { "src": "opencall_scroll.js", "use": "@now/static" }
+    { "src": "opencall_scroll.js", "use": "@now/static" },
+    { "src": "googleSheet.js", "use": "@now/static" }
   ]
 }
