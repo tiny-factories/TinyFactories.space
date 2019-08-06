@@ -104,6 +104,7 @@ a:active {
 
 
 
+
 .sec-faq {
   padding: 10vh 10vw 5vh 10vw;
   margin: 0 0 0 0;
@@ -126,6 +127,34 @@ a:active {
   text-align: left;
   line-height: 34px;
 }
+
+
+.sheetUpdate{
+  padding-bottom : 30px;
+}
+
+
+.sec-gSheet{
+  padding: 5vh 10vw 5vh 10vw;
+}
+
+.gSheet_date{
+  padding-bottom:50px;
+  color: #9b9b9b;
+  font-size: calc(0.5em + 0.5vw);
+}
+
+.gSheet_title{
+  color: black;
+  padding-bottom:10px;
+  font-size: calc(0.8em + 0.5vw);
+}
+
+.gSheet_text{
+  font-size: calc(0.6em + 0.5vw);
+  color: #9b9b9b;
+}
+
 
 
 
@@ -353,7 +382,6 @@ footer {
     margin: 0 0 0 0;
   }
 
- 
     
   .sec-p {
     padding: 0vh 0vw 0vh 0vw;
