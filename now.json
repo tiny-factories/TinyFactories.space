@@ -15,5 +15,12 @@
     { "src": "opencall.html", "use": "@now/static" },
     { "src": "opencall_scroll.js", "use": "@now/static" },
     { "src": "googleSheet.js", "use": "@now/static" }
+  ],
+  "routes": [
+    {
+      "src": "/arena2slide(.*)",
+      "status": 301,
+      "headers": { "Location": "https://arena2slides.herokuapp.com/" }
+    }
   ]
 }
