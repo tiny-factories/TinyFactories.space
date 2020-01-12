@@ -7,14 +7,14 @@
   },
   "builds": [
     { "src": "index.js", "use": "@now/node" },
-    { "src": "index.html", "use": "@now/static" },
-    { "src": "faq.html", "use": "@now/static" },
-    { "src": "projects.html", "use": "@now/static" },
-    { "src": "style.css", "use": "@now/static" },
-    { "src": "opencall_style.css", "use": "@now/static" },
-    { "src": "opencall.html", "use": "@now/static" },
-    { "src": "opencall_scroll.js", "use": "@now/static" },
-    { "src": "googleSheet.js", "use": "@now/static" }
+    { "src": "views/index.html", "use": "@now/static" },
+    { "src": "views/faq.html", "use": "@now/static" },
+    { "src": "views/projects.html", "use": "@now/static" },
+    { "src": "public/style.css", "use": "@now/static" },
+    { "src": "public/opencall_style.css", "use": "@now/static" },
+    { "src": "views/opencall.html", "use": "@now/static" },
+    { "src": "public/opencall_scroll.js", "use": "@now/static" },
+    { "src": "public/googleSheet.js", "use": "@now/static" }
   ],
   "routes": [
     {
