@@ -1,0 +1,25 @@
+{
+  "install": {
+    "include": [
+      "^package\\.json$",
+      "^\\.env$"
+    ]
+  },
+  "restart": {
+    "exclude": [
+      "^_11ty/",
+      "^_site/",
+      "^about/",
+      "^css/",
+      "feed",
+      "img",
+      "posts"
+    ],
+    "include": [
+      "watch.json$",
+      ".eleventy.js$",
+      "_data"
+    ]
+  },
+  "throttle": 1000
+}

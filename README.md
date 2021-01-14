@@ -1,39 +1,42 @@
-# Tiny Factories Site Development Guide (WIP)
+# eleventy-base-blog
+
+A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator. Most of the code here originated in [Eleventy-base-blog on Github](https://github.com/11ty/eleventy-base-blog), with a few modifications to make it run easily on Glitch. (See file LICENSE)
 
 
-Hello, this Glitch Projects acts as the development enviorment for the [tiny factories]() . 
 
+## Getting Started
 
+### 1. Remix this project.
 
-## How to publish
+Then have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
 
-1. Have Will add you to the tnyfctors team on [github](https://github.com) and [now](https://zeit.co/now). (Make a issue here to be added)
-2. Make any changes to this repo on glitch. (Use the preview option to check hanges on desktop, tablet, and phone)
-3. Push your changes to github:
-  a. Select the "tools" from the lower left had corner of the window.
-  b. Select "Git, Import and ,Export"
-  c. Then select "Export to GitHub" (if the button is grey you will need to grant aucess)
-  d. In the popup enter 'tnyfctrs/indie.camp' and click ok
-4. After your site has been pushed it will create a new branch on the github repo
-5. Approve and Merge the branch
-6. Now.sh will to build the site change ahd auto direct the domain.
+### 2. Installing dependencies happens automatically - thanks, Glitch!
 
-  
-  
-  
-  
-  
-  
-  
-## Site Details
+### 3. Edit \_data/metadata.json
 
-Main development is hosted on [Glitch]()
+### 4. Press 'Show' to view your new site
 
-Main Repo hosted on [github]()
+The site will reload automatically when something changes. In a normal Glitch project, you would be able to turn this off by unchecking 'Refresh App on Changes', but `eleventy --serve` is what we're using to serve files, and it always `--watch`es.
 
-Domain and site is hosted Now.sh
+### Implementation Notes
 
+#### Glitch-specific
 
-## troubleshooting
-- Check that the branch was sucessibully merged
-- Check that now.sh log sucessfully built and that domain auto redirected.
+- On Glitch, image files should be stored in `assets`. After uploading a new image, you can use the CDN link the assets drawer provides in your pages.
+  - This means you can remove `png` from `templateFormats`, because Glitch won't allow you to store a `png` outside of `assets`.
+- `watch.json` controls when Glitch refreshes the server, but since Eleventy is watching for us, we can safely tell it to ignore most of our files. Instead, Eleventy will rebuild and restart BrowserSync when you make changes.
+- Run BrowserSync in Ghost mode, so things like scroll position and form inputs are not synced across users. [See pull request in original repo](https://github.com/11ty/eleventy-base-blog/pull/34/files). We're using `eleventy --serve` to serve the static files, so this is necessary for a project on Glitch where it wouldn't be necessary if you were just running a build and then uploading the static file to a server that handled serving static files for you.
+  - Close readers might remember that Glitch _does_ serve static files for you in some projects! But, if you have a `package.json` file, Glitch assumes you're running a Node server yourself. (Typical usage would be `node server.js` in the `start` field of `package.json`.) We could create a server.js file that serves the static files, but for simplicity's sake, we're just using `eleventy --serve` as the `start` command. `eleventy --serve` isn't intended for production use, so you may hit other interesting snags that require modifications to the BrowserSync config.
+
+#### General Eleventy Help
+
+- `about/index.md` shows how to add a content page.
+- `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
+- Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
+- Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`. \* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
+- The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
+- This example uses three layouts:
+  - `_includes/layouts/base.njk`: the top level HTML structure
+  - `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
+  - `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
+- `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.

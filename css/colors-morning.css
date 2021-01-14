@@ -1,0 +1,33 @@
+:root {
+  --background: #FFE4DD;
+  --imagefilter: #FFE4DD;
+  --text: #6C0ED4;
+  --links: #6C0ED4;
+  --ascii: #6C0ED4;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text);
+}
+a {
+  color: var(--links);
+}
+a:hover {
+  color: var(--links);
+}
+a:active {
+  color: var(--links);
+}
+img {
+}
+
+a[href] {
+  color: var(--links);
+}
+a[href]:visited {
+  color: var(--links);
+}
+nav{
+    color: var(--links);
+}
