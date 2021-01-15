@@ -1,0 +1,23 @@
+---
+layout: layouts/home.njk
+
+pagination:
+   data: users
+   alias: user
+   size: 1
+permalink: "/users/{{ user.name | slug }}/index.html"
+eleventyComputed:
+   title: "{{ user.name }}"
+---
+
+<h2> cats like {{ user.username }}</h2>
+
+<p>
+	{{ user.description }}
+</p>
+
+
+
+<script>
+window.userId = '{{ user._id }}';
+</script>
