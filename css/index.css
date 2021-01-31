@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&display=swap');
 
 
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2FMenlo-Regular.woff?v=1612003277288') format('woff');
+    }
+
+
 /*--木木木木木木木---Tomo generated CSS classes---*/
 
 .container{
@@ -21,6 +29,7 @@
 }
 
 .ascii{
+  font-family: "Menlo Regular", monospace;
   font-family: monospace;
   white-space: pre;
   text-align:left;
@@ -33,28 +42,38 @@
 }
 
 .ascii_landing{
-/* max-width:100vw; */
 font-size:14.5px;
-font-family: monospace;
+font-family: "Menlo Regular", monospace;
 white-space: pre;
-overflow: hidden;
 text-align: left;
-  
-position: absolute;
-left: 50%;
--webkit-transform: translateX(-50%);
-transform: translateX(-50%);
+font-weight: bold;
+   
 margin-top:30px;
-margin-bottom:100px;  
+margin-bottom:10px;  
+   
+display: flex; 
+justify-content: center; 
+-webkit-transform: translateX(12%);
+transform: translateX(12%);
+  
+/* -- Shit that does not work
+max-width:100vw;
+position: absolute;  
+-webkit-transform: translateX(-55%);
+transform: translateX(-55%);
+*/
 }
+
+
 
 .ascii_bottom{
 max-width:100vw;
 font-size:14.5px;
-font-family: monospace;
+font-family: "Menlo Regular", monospace;
 white-space: pre;
 overflow: hidden;
 text-align: left;
+font-weight: bold;
   
 position: absolute;
 left: 50%;
@@ -64,9 +83,26 @@ transform: translateX(-50%);
 margin-bottom:10px;  
 }
 
-.ascii_adjust_space{
- height:250px;
+
+.small-ascii{
+  font-size:9px; 
+  margin-bottom: 30px;
 }
+
+.medium-ascii{
+  font-weight:800; 
+  font-size: 14px; 
+  argin-top:10px;
+}
+
+.medium-small-ascii{
+  font-weight:800; 
+  font-size: 14px; 
+  argin-top:10px;
+}
+
+
+
 
 p.photo_description{
   font-size:12px;
@@ -95,6 +131,14 @@ h3.page_top{
 /*--Tomo generated CSS classes--木木木木木木木---*/
 
 
+@keyframes fadeInAnimation { 
+    0% { 
+                opacity: 0; 
+        } 
+            100% { 
+                opacity: 1; 
+        } 
+} 
 
 
 html,
@@ -104,6 +148,15 @@ body {
   color: var(--text);
   background-color: var(--background);
   font-weight: 300;
+  overflow-x: hidden;
+  }
+
+
+
+h1,h2,h3,p,a,div,nav{
+  animation: fadeInAnimation ease 2s;  
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
 }
 
 
@@ -259,6 +312,7 @@ pre {
   margin-top:20px;
   list-style: none;
   text-align: center;
+  line-height:1.7;
 }
 
 .nav-item {
@@ -358,4 +412,44 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+.splitcol{
+  display: flex;
+  justify-content: center;
+}
+
+.split{
+  width:50%;
+}
+
+
+@media only screen and (max-width: 700px) {
+  
+  h1{
+  font-size:20px;
+  line-height:1.5;
+}
+  h3{
+  font-size:17px;
+  }
+
+  .small-ascii{
+    font-size:7px;
+  }
+  
+  .medium-ascii{
+    font-size:10px;
+  }
+  
+  .medium-small-ascii{
+    font-size:8px;
+  }
+  
+  .ascii_landing{
+    font-size:10px;
+  }
+
+
+
 }

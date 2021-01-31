@@ -1,29 +1,26 @@
 ---
 layout: layouts/home.njk
-eleventyNavigation:
-  key: members
-  order: 2
+title: membersdb
 ---
-
 
 <div class="container">
 
-<div class="ascii medium-ascii" > 
+<div class="ascii" style="font-weight:800; font-size: 14px; margin-top:10px">
 
-       ___        __   ___  __   __  
- |\/| |__   |\/| |__) |__  |__) /__` 
- |  | |___  |  | |__) |___ |  \ .__/ 
-                                     
+       ___        __   ___  __   __
+ |\/| |__   |\/| |__) |__  |__) /__`
+ |  | |___  |  | |__) |___ |  \ .__/ db demo
+
 
 </div>
 
-<!-- 
+<!--
 
 -->
 
 
 
-<div class="ascii small-ascii"> 
+<div class="ascii" style="font-size:9px; margin-bottom: 30px;">
 
      __________ __         __________ __         __________ __
     |    ___  _|__|_      |     ◊   _|__|_      |         _|__|_
@@ -39,24 +36,25 @@ eleventyNavigation:
 
 </div>
 
-<h3 class="page_top">Our members consists of designers, artists, technologists and many more.</h3>
+<h3 class="page_top">Our members consists of designers, artists, technologists and many more</h3>
 <br>
 <br>
 <p class="separater_line"></p>
 
 
 <section>
-  {% for member in members | randomOrder %}
+  {% for film in films %}
    <br>
     <div>
-    <a href= "{{ member.personal_link }}" target="blank">
-      <h2 class="f4 bg-near-black white mv0 pv2 ph3" style="margin-bottom: 15px">{{ member.name}}</h2> 
+    <a href= "{{ film.personal_link }}" target="blank">
+      <h2 class="f4 bg-near-black white mv0 pv2 ph3" style="margin-bottom: 15px">{{ film.name}}</h2>
     </a>
 
-      <img class="tf_images" src="{{ member.profile_pic }}" style="margin-top: 20px" alt="profile_pic">
-      
+      <img class="tf_images" src="{{ film.profile_pic }}" style="margin-top: 20px" alt="profile_pic">
+
         <br>
-      
+       
+
       <p class="separater_line"></p>
 
     </div>
