@@ -1,9 +1,17 @@
+/*
+Cotton Purple
+*/
+
 :root {
-  --background: #93D1FF;
-  --imagefilter: #93D1FF;
-  --text: #0047FC;
-  --links: #0047FC;
-  --ascii: #0047FC;
+  --background: #FFE4DD;
+  --imagefilter: #FFE4DD;
+  --text: #6C0ED4;
+  --links: #6C0ED4;
+  --ascii: #6C0ED4;
+}
+
+.profile-image{
+    filter: invert(11%) sepia(71%) saturate(5170%) hue-rotate(293deg) brightness(87%) contrast(111%);
 }
 
 html {
