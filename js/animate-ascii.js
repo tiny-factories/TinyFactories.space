@@ -1,41 +1,24 @@
-
+//initial thing that appears on screen//
 let ascii_0 = document.getElementById("animation_0");
-//base--animation---//
-let ascii_1 = document.getElementById("animation_1");
-let ascii_2 = document.getElementById("animation_2");
-let ascii_3 = document.getElementById("animation_3");
-let ascii_4 = document.getElementById("animation_4");
-let ascii_5 = document.getElementById("animation_5");
-let ascii_6 = document.getElementById("animation_6");
-let ascii_7 = document.getElementById("animation_7");
 
-
-
+//grabs anything with this class//
+let ascii_animations = document.getElementsByClassName("ascii_animation ascii_landing");
 
 let blink_speed = 1100;
-let wordObjects = [ascii_0,ascii_1,ascii_2,ascii_3,ascii_4,ascii_5,ascii_6,ascii_7,ascii_7,ascii_6,ascii_5,ascii_4,ascii_3,ascii_2,ascii_1];
-
-
-//ascii_0.innerHTML = wordObjects[2].innerHTML;
-
-
 
 let count = 0;
+let add = 1;
 let t = setInterval(function() {
   
-count++;
-console.log(count);
-ascii_0.innerHTML = wordObjects[count].innerHTML;
+count = count + add;
+ascii_0.innerHTML = ascii_animations[count].innerHTML;
+console.log("Count : " + count +"---"+ ascii_animations[count]);
 
-
-  if (count == 14){
-    console.log("!!!!Reset!!!!");
-    count = -1;
+  if (count == ascii_animations.length-1 || count==0 ){
+    console.log("Flip Direction");
+    add *= -1;
   }
 }, blink_speed);
 
 
-
-
-// console.log("Count : " + count +"---"+ wordObjects[count]);
   

@@ -67,7 +67,7 @@
   {
     "title": "FigPug",
     "description": "tiny plugins to help supercharge your design workflow",
-    "heroImage": "",
+    "heroImage": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2FFigma%20cover.png?v=1612173334405",
     "projectData": {
       "liveUrl": "http://figpug.com",
       "archiveUrl": "url",
@@ -206,20 +206,6 @@
     "createdBy": ["Weiwei", "Jess"],
     "tags": ["one", "two"],
     "year": "2019"
-  },
-
-  {
-    "title": "tiny hardware club",
-    "description": "Open Source doesn’t need to be hard to source.",
-    "heroImage": "aURL",
-    "projectData": {
-      "liveUrl": "https://tinyhardware.club",
-      "archiveUrl": "",
-      "isMaintained": "true"
-    },
-    "createdBy": ["Will"],
-    "tags": ["one", "two"],
-    "year": "2021"
   },
   {
     "title": "commons",
