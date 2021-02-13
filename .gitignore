@@ -1,14 +1,4 @@
-# Build Files
 _site/
 node_modules/
 package-lock.json
-
-
-#Software Files
-
-##Glitch
-.editorconfig
-watch.json
-
-##IDEs
-.nova/
+.env

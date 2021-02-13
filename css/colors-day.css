@@ -1,9 +1,16 @@
+/* 
+Sleepy Green
+ */
 :root {
-  --background: #FFE4DD;
-  --imagefilter: #FFE4DD;
-  --text: #6C0ED4;
-  --links: #6C0ED4;
-  --ascii: #6C0ED4;
+  --background: #FFFFE7;
+  --imagefilter: #FFFFE7;
+  --text: #025B00;
+  --links: #025B00;
+  --ascii: #025B00;
+}
+
+.profile-image{
+      filter: invert(17%) sepia(91%) saturate(7085%) hue-rotate(128deg) brightness(100%) contrast(106%);
 }
 
 html {

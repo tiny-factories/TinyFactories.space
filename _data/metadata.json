@@ -1,15 +1,15 @@
 {
   "title": "Tiny Factories",
   "url": "https://tinyfactories.space/",
-  "description": "A community for people who are young in exploring their creative expressions.",
+  "description": "A tribe of people supporting each other to establish their creative footing.",
   "feed": {
-    "subtitle": "A community for people who are young in exploring their creative expressions.",
+    "subtitle": "A tribe of people supporting each other to establish their creative footing.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "hhttps://tinyfactories.space/"
   },
   "author": {
-    "name": "The Gardener",
+    "name": "The Gardeners",
     "email": "hello@tinyfactories.space"
   }
 }

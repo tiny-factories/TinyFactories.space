@@ -34,7 +34,7 @@
       "archiveUrl": "https://www.kickstarter.com/projects/1324099197/quickstarterbbcube-a-shouting-game-for-civilized-p?ref=nav_search&result=project&term=BBCubes",
       "isMaintained": "true"
     },
-    "createdBy": ["Weiwei", "Damon"],
+    "createdBy": ["Weiwei", "Diana", "Bill", "Damon"],
     "tags": ["one", "two"],
     "year": "2018"
   },
@@ -47,7 +47,7 @@
       "archiveUrl": "https://www.kickstarter.com/projects/weiweihsu/break-kickstarter-cyano-postcard?ref=user_menu",
       "isMaintained": "false"
     },
-    "createdBy": ["Weiwe", "Damon"],
+    "createdBy": ["Weiwei", "Damon"],
     "tags": ["one", "two"],
     "year": "2019"
   },
@@ -67,7 +67,7 @@
   {
     "title": "FigPug",
     "description": "tiny plugins to help supercharge your design workflow",
-    "heroImage": "",
+    "heroImage": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2FFigma%20cover.png?v=1612173334405",
     "projectData": {
       "liveUrl": "http://figpug.com",
       "archiveUrl": "url",
@@ -206,20 +206,6 @@
     "createdBy": ["Weiwei", "Jess"],
     "tags": ["one", "two"],
     "year": "2019"
-  },
-
-  {
-    "title": "tiny hardware club",
-    "description": "Open Source doesn’t need to be hard to source.",
-    "heroImage": "aURL",
-    "projectData": {
-      "liveUrl": "https://tinyhardware.club",
-      "archiveUrl": "",
-      "isMaintained": "true"
-    },
-    "createdBy": ["Will"],
-    "tags": ["one", "two"],
-    "year": "2021"
   },
   {
     "title": "commons",

@@ -1,9 +1,17 @@
+/*
+Hazy Blue
+*/
+
 :root {
-  --background: #110270;
-  --imagefilter: #110270;
-  --text: #9EE2FF;
-  --links: #9EE2FF;
-  --ascii: #9EE2FF;
+  --background: #ECFBFC;
+  --imagefilter: #ECFBFC;
+  --text: #2400FF;
+  --links: #2400FF;
+  --ascii: #2400FF;
+}
+
+.profile-image{
+    filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg) brightness(100%) contrast(145%);
 }
 
 html {

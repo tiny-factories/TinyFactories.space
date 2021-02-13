@@ -1,42 +1,13 @@
-# eleventy-base-blog
+# Tiny Factories 
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator. Most of the code here originated in [Eleventy-base-blog on Github](https://github.com/11ty/eleventy-base-blog), with a few modifications to make it run easily on Glitch. (See file LICENSE)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V8W2C9)
 
 
+> a community for people who are young in exploring their creative expressions through design and technology
 
-## Getting Started
+## Join us
 
-### 1. Remix this project.
 
-Then have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
+## Support us
 
-### 2. Installing dependencies happens automatically - thanks, Glitch!
-
-### 3. Edit \_data/metadata.json
-
-### 4. Press 'Show' to view your new site
-
-The site will reload automatically when something changes. In a normal Glitch project, you would be able to turn this off by unchecking 'Refresh App on Changes', but `eleventy --serve` is what we're using to serve files, and it always `--watch`es.
-
-### Implementation Notes
-
-#### Glitch-specific
-
-- On Glitch, image files should be stored in `assets`. After uploading a new image, you can use the CDN link the assets drawer provides in your pages.
-  - This means you can remove `png` from `templateFormats`, because Glitch won't allow you to store a `png` outside of `assets`.
-- `watch.json` controls when Glitch refreshes the server, but since Eleventy is watching for us, we can safely tell it to ignore most of our files. Instead, Eleventy will rebuild and restart BrowserSync when you make changes.
-- Run BrowserSync in Ghost mode, so things like scroll position and form inputs are not synced across users. [See pull request in original repo](https://github.com/11ty/eleventy-base-blog/pull/34/files). We're using `eleventy --serve` to serve the static files, so this is necessary for a project on Glitch where it wouldn't be necessary if you were just running a build and then uploading the static file to a server that handled serving static files for you.
-  - Close readers might remember that Glitch _does_ serve static files for you in some projects! But, if you have a `package.json` file, Glitch assumes you're running a Node server yourself. (Typical usage would be `node server.js` in the `start` field of `package.json`.) We could create a server.js file that serves the static files, but for simplicity's sake, we're just using `eleventy --serve` as the `start` command. `eleventy --serve` isn't intended for production use, so you may hit other interesting snags that require modifications to the BrowserSync config.
-
-#### General Eleventy Help
-
-- `about/index.md` shows how to add a content page.
-- `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
-- Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
-- Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`. \* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
-- The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
-- This example uses three layouts:
-  - `_includes/layouts/base.njk`: the top level HTML structure
-  - `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
-  - `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-- `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
+## Resources
