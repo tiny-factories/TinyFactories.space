@@ -1,27 +1,31 @@
 <!doctype html>
 <html lang="en">
   <head>
+     <title>{{ renderData.title or title or metadata.title }}/title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Opengraph -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
+    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="{{ metadata.feed.path | url }}">
+    
+  <!-- Twitter -->
+    <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
+    <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     
     <script type="text/javascript" src="/js/colors.js"></script>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134902527-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-134902527-3');
-    </script>
-
+  <script async defer data-website-id="2b6c9aa0-e9b8-48b1-bf84-7f599b652913" src="https://umami.tiny-factories.vercel.app/umami.js"></script>
 
   </head>
   <body>
@@ -43,6 +47,25 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+  <script language="JavaScript">
+<!--
+var space = "";
+var speed = "100";
+var pos = 0;
+var msg = "・゜✧.゜.";
+function Scroll()
+{
+document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", speed);
+}
+Scroll();
+-->
+</script>
+
+
  
   </body>
 </html>
