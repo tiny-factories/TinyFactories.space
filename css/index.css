@@ -102,6 +102,26 @@ margin-bottom:10px;
 }
 
 
+@keyframes moveInOut {
+    from {
+        left:-200px;
+    }
+    to {
+        left:120vw;
+    }
+}
+
+#plane_animation{
+  position: absolute;
+  top: 35px;
+  left: -400px;
+}
+#plane_animation.horizTranslate { 
+    animation-name: moveInOut;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
 
 
 p.photo_description{
@@ -143,6 +163,7 @@ h3.page_top{
 
 html,
 body {
+  cursor: crosshair;
   padding: 0;
   font-family: 'DM Mono', helvetica;
   color: var(--text);
@@ -449,6 +470,11 @@ a[href].direct-link:focus:visited,
   .ascii_landing{
     font-size:10px;
   }
+  
+  #plane_animation{
+    display:none;
+  }
+
 
 
 
