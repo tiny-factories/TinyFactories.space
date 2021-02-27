@@ -14,7 +14,7 @@
   {
     "name": "Andy",
     "handle": "andy_shimmin",
-    "profile_pic": "https://cdn.glitch.com/a42f308a-a729-44c8-a81d-145516b79939%2FGroup_63.png?v=1611708999610",
+    "profile_pic": "https://cdn.glitch.com/88b0616c-3f0c-4d6f-a529-e928070e556d%2FAndy%20Shimmin.png?v=1610197114050",
     "personal_link": "https://twitter.com/andy_shimmin"
   },
   {
@@ -70,5 +70,17 @@
     "handle": "mayli",
     "profile_pic": "https://cdn.glitch.com/88b0616c-3f0c-4d6f-a529-e928070e556d%2FMay-Li%20Khoe.png?v=1610197119017",
     "personal_link": "https://twitter.com/mayli"
+  },
+  {
+    "name": "Subeida Ahmed",
+    "handle": "Subeida Ahmed",
+    "profile_pic": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2FSubeida.png?v=1614430468183",
+    "personal_link": "https://twitter.com/"
+  },
+  {
+    "name": "Tara Lin",
+    "handle": "Tara",
+    "profile_pic": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2FTara_Lin.png?v=1614430475310",
+    "personal_link": "https://twitter.com/astrangel00p"
   }
 ]
