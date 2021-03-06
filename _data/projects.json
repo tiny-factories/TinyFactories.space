@@ -8,7 +8,20 @@
       "archiveUrl": "https://www.their.tube/",
       "isMaintained": "true"
     },
-    "createdBy": "Tomo Kihara",
+    "createdBy": "Tomo",
+    "tags": ["one", "two"],
+    "year": "2020"
+  },
+    {
+    "title": "World Collider",
+    "description": "Urban AR research project that turns anywhere into virtual Tokyo",
+    "heroImage": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2Fmain_mini.jpg?v=1615047512094",
+    "projectData": {
+      "liveUrl": "https://www.world-collider.app/",
+      "archiveUrl": "https://www.world-collider.app/",
+      "isMaintained": "true"
+    },
+    "createdBy": "Tomo",
     "tags": ["one", "two"],
     "year": "2020"
   },
