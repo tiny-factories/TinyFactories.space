@@ -12,7 +12,7 @@
     "tags": ["one", "two"],
     "year": "2020"
   },
-    {
+  {
     "title": "World Collider",
     "description": "Urban AR research project that turns anywhere into virtual Tokyo",
     "heroImage": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2Fmain_mini.jpg?v=1615047512094",
@@ -65,17 +65,17 @@
     "year": "2019"
   },
   {
-    "title": "easy chinese",
-    "description": "A carefully curated, fun, and pretty flashcards to accelerate your chinese learning from scratch.",
-    "heroImage": "https://cdn.glitch.com/88b0616c-3f0c-4d6f-a529-e928070e556d%2Fe6285e80-2aea-4b1b-804c-fb55c5339665-6b2dd90f-c5a0-4948-b837-75f0ef4ef5b7_open%20graph.png?v=1610198175136",
+    "title": "Multiverse",
+    "description": "A constellation of internet corners for the rest of us.",
+    "heroImage": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2Fmultiverse.png?v=1631868729929",
     "projectData": {
-      "liveUrl": "https://easychinese.space",
-      "archiveUrl": "https://easychinese.space",
-      "isMaintained": "false"
+      "liveUrl": "https://multiverse.plus/home",
+      "archiveUrl": "https://multiverse.plus/home",
+      "isMaintained": "true"
     },
-    "createdBy": ["Weiwei", "Will"],
-    "tags": ["Chinese", "Education"],
-    "year": "2019"
+    "createdBy": ["Weiwei", "Kicks Condor"],
+    "tags": ["Blog", "Social Network"],
+    "year": "2021"
   },
   {
     "title": "FigPug",
@@ -138,7 +138,7 @@
       "archiveUrl": "url",
       "isMaintained": "false"
     },
-    "createdBy": ["Weiwei", "Adi", "Will", "Jess"],
+    "createdBy": ["Jess", "Adi", "Will", "Weiwei"],
     "tags": ["one", "two"],
     "year": "2020"
   },
@@ -177,7 +177,7 @@
       "archiveUrl": "https://socialdistancing.works",
       "isMaintained": "true"
     },
-    "createdBy": ["Weiwei", "Will", "Jess"],
+    "createdBy": ["Jess", "Will", "Weiwei"],
     "tags": ["one", "two"],
     "year": "2020"
   },
@@ -195,17 +195,17 @@
     "year": "2018"
   },
   {
-    "title": "time garden",
-    "description": "Fight procrastination by reflecting how you spend time.",
-    "heroImage": "https://cdn.glitch.com/88b0616c-3f0c-4d6f-a529-e928070e556d%2Fe6285e80-2aea-4b1b-804c-fb55c5339665-AFB0DFB1-1014-40E2-A098-390BF322F8A2.jpeg?v=1610198165074",
+    "title": "Sprout",
+    "description": "Your space, your call",
+    "heroImage": "https://cdn.glitch.com/a350d2cb-17a7-4fa6-86f2-12d51aff6c68%2Fsprout.jpg?v=1631869357970",
     "projectData": {
-      "liveUrl": "https://weiweihsu.typeform.com/to/GwiV0H",
-      "archiveUrl": "https://weiweihsu.typeform.com/to/GwiV0H",
+      "liveUrl": "https://sprout.place",
+      "archiveUrl": "https://sprout.place",
       "isMaintained": "true"
     },
-    "createdBy": ["Weiwei", "Roy"],
-    "tags": ["one", "two"],
-    "year": "2018"
+    "createdBy": ["May-Li", "Weiwei", "and others"],
+    "tags": ["Video conferencing", "Collaboration tool"],
+    "year": "2021"
   },
   {
     "title": "tiny profiles",
