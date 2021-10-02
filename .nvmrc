@@ -1,1 +1,4 @@
-8
+MONGO_URL=mongodb+srv://tinyAdminRead:wb5qLLWtqCvORNA9@cluster0.7l7bm.mongodb.net/
+DEVELOPMENT=true
+BOOKSHELF_ID=4fd1cb28f6d84672b4f570dd28ea3de0
+NOTION_KEY=secret_OZEiLPshoTwPRfoiG2wxTcWQvkOQ5rhwjYSabXyG7Pq

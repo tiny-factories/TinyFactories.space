@@ -1,0 +1,58 @@
+---
+layout: layouts/home.njk
+templateClass: bookshelf
+eleventyNavigation:
+  key: members
+  order: 2
+---
+
+
+<div class="container">
+
+<div class="ascii medium-ascii" >
+
+       ___        __   ___  __   __
+ |\/| |__   |\/| |__) |__  |__) /__`
+ |  | |___  |  | |__) |___ |  \ .__/
+
+
+</div>
+
+<!--
+
+-->
+
+
+{% include "ascii/members-hero.njk" %}
+
+<h3 class="page_top">Our members consists of designers, artists, technologists and many more.</h3>
+<br>
+<br>
+<p class="separater_line"></p>
+
+
+<section>
+Notion Data
+<div>
+
+
+
+this one
+<div>
+
+{% for member in notion.response.results%}
+ <br>
+  <div>
+  <p>name: {{member.properties.Name.title[0].text.content}}</p>
+  </div>
+{% endfor %}
+
+</div>
+
+
+</section>
+
+
+
+
+
