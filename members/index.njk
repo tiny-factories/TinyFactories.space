@@ -1,6 +1,5 @@
 ---
 layout: layouts/home.njk
-templateClass: bookshelf
 eleventyNavigation:
   key: members
   order: 2
@@ -18,9 +17,7 @@ eleventyNavigation:
 
 </div>
 
-<!--
 
--->
 
 
 {% include "ascii/members-hero.njk" %}
@@ -32,21 +29,21 @@ eleventyNavigation:
 
 
 <section>
-Notion Data
-<div>
-
-
-
-this one
-<div>
-
-{% for member in notion.response.results%}
- <br>
-  <div>
-  <p>name: {{member.properties.Name.title[0].text.content}}</p>
-  </div>
+<div >
+{% for members in members.Members.results %}
+    <div >
+        <div >
+            <div>
+                <img  src="{{members.properties.Profile.files[0].name}}" />
+            </div>
+            <div class="card--content">
+                <p >{{members.properties.Name.title[0].text.content}} </p>
+                <p">{{members.properties.Description.title[0].text.content}} </p>
+                <p >{{members.properties.Author.rich_text[0].text.content}} </p>
+            </div>
+        </div>
+    </div>
 {% endfor %}
-
 </div>
 
 
