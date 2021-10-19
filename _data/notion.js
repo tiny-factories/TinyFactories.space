@@ -1,38 +1,45 @@
 const Cache = require("@11ty/eleventy-cache-assets");
-const { Client } = require('@notionhq/client');
-const notion = new Client({ auth: process.env.NOTION_API_KEY });
-
 require("dotenv").config();
 
+module.exports = async function () {
+  let Member_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_MEMBERS_DATABASE_ID}/query`
 
-// module.exports = async function () {
-//   const databaseId = '4c35402ddd1241d9821482b060ad968f';
-//   const response = await notion.databases.retrieve({ database_id: databaseId });
-//   // console.log(response);
-//   console.log(JSON.stringify(response.properties));
-//
-// };
+  let Members = await Cache(Member_DB_URL, {
+      duration: "1d",
+      type: "json",
+      fetchOptions: {
+          method: "POST",
+          headers: {
+              "Authorization": `Bearer ${process.env.NOTION_TOKEN}`,
+              "Notion-Version": "2021-05-13",
+              "Content-Type": "application/json"
+          },
+      }
+  });
+
+  return {
+      Members
+  };
+};
 
 module.exports = async function () {
-  const databaseId = '4c35402ddd1241d9821482b060ad968f';
-  const response = await notion.databases.query({
-    database_id: databaseId,
-    filter: {
-      or: [
-        {
-          property: 'Publish',
-          checkbox: {
-            equals: true,
+
+  let Projects_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_PROJECTS_DATABASE_ID}/query`
+
+  let Projects = await Cache(Projects_DB_URL, {
+      duration: "1d",
+      type: "json",
+      fetchOptions: {
+          method: "POST",
+          headers: {
+              "Authorization": `Bearer ${process.env.NOTION_TOKEN}`,
+              "Notion-Version": "2021-05-13",
+              "Content-Type": "application/json"
           },
-        },
-      ],
-    },
-    sorts: [
-      {
-        property: 'Name',
-        direction: 'ascending',
-      },
-    ],
+      }
   });
-  console.log(response.results);
+
+  return {
+      Projects
+  };
 };
