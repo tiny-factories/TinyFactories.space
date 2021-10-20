@@ -33,8 +33,7 @@ eleventyNavigation:
 {% for project in projects.Projects.results | randomOrder %}
 <br>
 <div>
-<a href="#" target="blank">
-      <h2 class="f4 bg-near-black white mv0 pv2 ph3" style="margin-bottom: 15px">{{project.properties.Name.title[0].text.content}}</h2> </a>
+<a href={{project.properties.Link.url}}><h2 class="f4 bg-near-black white mv0 pv2 ph3" style="margin-bottom: 15px">{{project.properties.Name.title[0].text.content}}</h2></a>
 
   <div class="pa3 bt">
     <p class="f6 f5-ns lh-copy measure mv0" style="margin-bottom: 0px">
@@ -42,10 +41,8 @@ eleventyNavigation:
     </p>
   </div>
 
-  <img class="tf_images" src="{{members.properties.Profile.files[0].name}}" style="margin-top: 20px" alt="tiny_profile_pic">
-    <p style="text-align:right; margin-rigt:5px;">
-    By : PASS NAMES
-    </p>
+  <img class="tf_images" src={{project.properties.HeroImage.files[0].file.url}} style="margin-top: 20px" alt={{project.properties.Name.title[0].text.content}}>
+
     <br>
 
   <p class="separater_line"></p>

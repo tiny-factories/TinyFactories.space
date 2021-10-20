@@ -17,9 +17,6 @@ eleventyNavigation:
 
 </div>
 
-
-
-
 {% include "ascii/members-hero.njk" %}
 
 <h3 class="page_top">Our members consists of designers, artists, technologists and many more.</h3>
@@ -29,24 +26,21 @@ eleventyNavigation:
 
 
 <section>
-<div >
-{% for members in members.Members.results %}
-    <div >
-        <div >
-            <div>
-                <img  src="{{members.properties.Profile.files[0].name}}" />
-            </div>
-            <div class="card--content">
-                <p >{{members.properties.Name.title[0].text.content}} </p>
-                <p">{{members.properties.Description.title[0].text.content}} </p>
-                <p >{{members.properties.Author.rich_text[0].text.content}} </p>
-            </div>
-        </div>
-    </div>
-{% endfor %}
-</div>
-
-
+  <div >
+  {% for members in members.Members.results  | randomOrder %}
+  <div >
+  {{members.properties.HeroImage}}
+  <img src={{members.properties.HeroImage.url}} alt={{members.properties.Name.title[0].text.content}}/>
+  </div>
+  <div>
+  <p>
+  <a href={{members.properties.personal_link.url}}>{{members.properties.Name.title[0].text.content}}</a>
+  <br/>
+  {{members.properties.Description.rich_text[0].plain_text}}
+  </p>
+  </div>
+  {% endfor %}
+  </div>
 </section>
 
 
