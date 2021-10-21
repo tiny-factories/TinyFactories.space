@@ -2,10 +2,8 @@ const Cache = require("@11ty/eleventy-cache-assets");
 require("dotenv").config();
 
 module.exports = async function () {
-  let Member_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_MEMBERS_DATABASE_ID}/query`
-console.log("💾 Fetching Member DB from notion")
-
-  let Members = await Cache(Member_DB_URL, {
+  let Blog_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_BLOG_DATABASE_ID}/query`
+  let Blogs = await Cache(Blog_DB_URL, {
       duration: "1d",
       type: "json",
       fetchOptions: {
@@ -19,7 +17,7 @@ console.log("💾 Fetching Member DB from notion")
   });
 
   return {
-      Members
+      Blogs
   };
 };
 

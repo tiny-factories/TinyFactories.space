@@ -2,9 +2,9 @@ const Cache = require("@11ty/eleventy-cache-assets");
 require("dotenv").config();
 
 module.exports = async function () {
+  let Newsletter_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_NEWSLETTER_DATABASE_ID}/query`
 
-  let Projects_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_PROJECTS_DATABASE_ID}/query`
-  let Projects = await Cache(Projects_DB_URL, {
+  let Newsletters = await Cache(Newsletter_DB_URL, {
       duration: "1d",
       type: "json",
       fetchOptions: {
@@ -16,7 +16,10 @@ module.exports = async function () {
           },
       }
   });
+
   return {
-      Projects
+      Newsletters
   };
 };
+
+
