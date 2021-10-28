@@ -30,11 +30,11 @@ eleventyNavigation:
   {% for members in members.Members.results  | randomOrder %}
   <div >
   {{members.properties.HeroImage}}
-  <img src={{members.properties.HeroImage.url}} alt={{members.properties.Name.title[0].text.content}}/>
+  <img src={{members.properties.TinyProfile.files[0].file.url}} alt={{members.properties.Name.title[0].text.content}}/>
   </div>
   <div>
   <p>
-  <a href={{members.properties.personal_link.url}}>{{members.properties.Name.title[0].text.content}}</a>
+  <a href={{members.properties.Link.url}}>{{members.properties.Name.title[0].text.content}}</a>
   <br/>
   {{members.properties.Description.rich_text[0].plain_text}}
   </p>
