@@ -4,3 +4,5 @@ package-lock.json
 .env
 .nvmrc
 .cache
+_site
+node_modules
