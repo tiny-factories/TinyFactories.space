@@ -37,9 +37,11 @@ eleventyNavigation:
 
   <div class="pa3 bt">
     <p class="f6 f5-ns lh-copy measure mv0" style="margin-bottom: 0px">
-      {{project.properties.Description.title[0].text.content}}
+      {{project.properties.Description.rich_text[0].plain_text}}
     </p>
+
   </div>
+
 
   <img class="tf_images" src={{project.properties.HeroImage.files[0].file.url}} style="margin-top: 20px" alt={{project.properties.Name.title[0].text.content}}>
 
