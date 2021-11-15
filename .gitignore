@@ -2,3 +2,7 @@ _site/
 node_modules/
 package-lock.json
 .env
+.nvmrc
+.cache
+_site
+node_modules
