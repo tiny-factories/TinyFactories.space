@@ -1,12 +1,10 @@
 // const Cache = require("@11ty/eleventy-cache-assets");
-// const Image = require("@11ty/eleventy-img");
-// const path = require("path");
-//
 // require("dotenv").config();
 //
 // module.exports = async function () {
-//   let Blog_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_BLOG_DATABASE_ID}/query`;
-//   let Blogs = await Cache(Blog_DB_URL, {
+//   let Event_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_EVENTS_DATABASE_ID}/query`;
+//
+//   let Events = await Cache(Event_DB_URL, {
 //     duration: "1d",
 //     type: "json",
 //     fetchOptions: {
@@ -18,7 +16,6 @@
 //       },
 //     },
 //   });
-//
 //   // for (var j = 0; j < Blogs.results.length; j++) {
 //   //   if (Blogs.results[j].properties.HeroImage.files[0]) {
 //   //     // console.log("Saving Image");
@@ -43,8 +40,7 @@
 //   //     // console.log("No file Uploaded");
 //   //   }
 //   // }
-//
 //   return {
-//     Blogs,
+//     Events,
 //   };
 // };

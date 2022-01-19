@@ -42,8 +42,8 @@ eleventyNavigation:
 
   </div>
 
-
-  <img class="tf_images" src={{project.properties.HeroImage.files[0].file.url}} style="margin-top: 20px" alt={{project.properties.Name.title[0].text.content}}>
+  <img class="tf_images" style="margin-top: 20px" src={{("/img/"+ (project.properties.HeroImage.files[0].name).split(' ').join('_')).split('.').slice(0, -1).join('.') +".jpeg"}}
+   />
 
     <br>
 

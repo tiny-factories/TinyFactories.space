@@ -31,13 +31,13 @@ eleventyNavigation:
   {% if members.properties.Publish.checkbox === true %}
   <div style="margin-top: 100px">
 
-  <img class="tf_images" style="margin-top: 20px" src={{members.properties.TinyProfile.files[0].file.url}} alt={{members.properties.Name.title[0].text.content}}/>
+  <img class="tf_images" style="margin-top: 20px" src={{("/img/"+ (members.properties.TinyProfile.files[0].name).split(' ').join('_')).split('.').slice(0, -1).join('.') +".jpeg"}} />
   <div style="margin-left: 20px">
     <p class="f4 bg-near-black white mv0 pv2 ph3">
     <a href={{members.properties.Link.url}} >{{members.properties.Name.title[0].text.content}}</a>
     </p>
     <p class="f4 bg-near-black white mv0 pv2 ph3">
-    <a href={{members.properties.Link.url}} >  {{members.properties.Description.rich_text[0].plain_text}}
+    <a href={{members.properties.Link.url}} >{{members.properties.Description.rich_text[0].plain_text}}
     </a>
     </p>
   </div>

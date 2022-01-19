@@ -5,8 +5,9 @@ const path = require("path");
 require("dotenv").config();
 
 module.exports = async function () {
-  let Member_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_MEMBERS_DATABASE_ID}/query`;
-  let Members = await Cache(Member_DB_URL, {
+  let Newsletter_DB_URL = `https://api.notion.com/v1/databases/${process.env.TF_NEWSLETTER_DATABASE_ID}/query`;
+
+  let Newsletters = await Cache(Newsletter_DB_URL, {
     duration: "1d",
     type: "json",
     fetchOptions: {
@@ -18,13 +19,12 @@ module.exports = async function () {
       },
     },
   });
-
-  for (var j = 0; j < Members.results.length; j++) {
-    if (Members.results[j].properties.TinyProfile.files[0]) {
+  for (var j = 0; j < Newsletters.results.length; j++) {
+    if (Newsletters.results[j].properties.HeroImage.files[0]) {
       // console.log("Saving Image");
 
       (async () => {
-        let url = Members.results[j].properties.TinyProfile.files[0].file.url;
+        let url = Newsletters.results[j].properties.HeroImage.files[0].file.url;
         let stats = await Image(url, {
           formats: ["jpeg"],
           removeUrlQueryParams: false,
@@ -38,13 +38,13 @@ module.exports = async function () {
         // console.log(stats);
       })();
 
-      // console.log(Members.results[j].properties.TinyProfile.files[0].file.url);
+      // console.log(Newsletters.results[j].properties.HeroImage.files[0].file.url);
     } else {
       // console.log("No file Uploaded");
     }
   }
 
   return {
-    Members,
+    Newsletters,
   };
 };
